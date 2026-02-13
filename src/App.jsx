@@ -53,7 +53,7 @@ export default function Page() {
 
     <div className="max-w-2xl space-y-5">
       <p className="text-lg md:text-xl leading-relaxed">
-        You said yes and that made my whole world brighter, I don’t know what I did to deserve someone as sweet, intelligent,
+        You said yes and that made my whole world brighter. I don’t know what I did to deserve someone as sweet, intelligent,
         beautiful, and amazing as you. I’m so grateful and proud to call you mine.
         You’re my favorite person and I can't wait for us to spend forever together.
       </p>
