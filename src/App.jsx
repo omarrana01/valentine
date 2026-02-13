@@ -37,7 +37,6 @@ function App() {
 
 const getNoButtonText = () => {
   const phrases = [
-const phrases = [
   "No",
   "Are you sure?",
   "Really sure?",
