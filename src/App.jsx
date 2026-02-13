@@ -42,17 +42,28 @@ export default function Page() {
       {yesPressed ? (
         <>
           <img src="https://media.tenor.com/gUiu1zyxfzYAAAAi/bear-kiss-bear-kisses.gif" />
-          <div className="text-4xl md:text-6xl font-bold my-4">
-            Happy Valentine #1 together jaan, you said yes and that made my whole world brighter!
-            
-            I don’t know what I did to deserve someone as sweet, intelligent, beautiful, and amazing as you. I’m so grateful and proud to call you mine. You’re my favorite person and I can't wait for us to spend forever together.
+          {yesPressed ? (
+  <>
+    <img src="https://media.tenor.com/gUiulzyxfzYAAAAi/bear-kiss-bear-kisses.gif" />
 
-            I love you, Aliah.
+    <div className="text-4xl md:text-6xl font-bold my-4 text-center">
+      Happy Valentine #1 together jaan, you said yes and that made my whole world brighter!
+    </div>
 
-            - Omar
-            
-          </div>
-        </>
+    <p className="text-lg md:text-xl max-w-2xl text-center mt-4">
+      I don’t know what I did to deserve someone as sweet, intelligent, beautiful,
+      and amazing as you. I’m so grateful and proud to call you mine.
+      You’re my favorite person and I can't wait for us to spend forever together.
+    </p>
+
+    <p className="text-lg text-center mt-4">
+      I love you, Aliah.
+    </p>
+
+    <p className="text-lg text-center mt-2">
+      — Omar
+    </p>
+  </>
       ) : (
         <>
           <img
