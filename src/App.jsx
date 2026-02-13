@@ -57,7 +57,7 @@ const getNoButtonText = () => {
 
   return (
     <div
-  className="min-h-screen flex items-center justify-center px-4 py-10 bg-cover bg-center"
+  className="min-h-[100svh] flex items-center justify-center px-4 py-10 bg-cover bg-center"
   style={{ backgroundImage: `url(${bgImage})` }}
 >
   <div className="relative w-full max-w-xl">
@@ -68,7 +68,7 @@ const getNoButtonText = () => {
         yesPressed ? "opacity-100 scale-100" : "opacity-0 scale-95 pointer-events-none"
       }`}
     >
-      <div className="bg-white/75 backdrop-blur-xl rounded-3xl shadow-2xl px-8 py-10 text-center border border-white/40">
+      <<div className="relative w-full max-w-lg min-h-[500px] flex items-center justify-center">
         <h1 className="text-3xl md:text-4xl font-bold mb-6">
           Happy Valentine Day #1 jaan 💕
         </h1>
