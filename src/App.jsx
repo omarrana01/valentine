@@ -15,23 +15,23 @@ export default function Page() {
     const phrases = [
       "No",
       "Are you sure?",
-      "Really sure?",
-      "Think again!",
-      "Last chance!",
-      "Surely not?",
-      "You might regret this!",
-      "Give it another thought!",
+      "Are you positive?",
+      "Wrong button maybe?",
+      "aliah pls",
+      "Negative",
+      "But you should",
+      "Think again?",
       "Are you absolutely certain?",
-      "This could be a mistake!",
-      "Have a heart!",
-      "Don't be so cold!",
+      "Maybe you hit by mistake!",
+      "why u do this",
+      "ma'am pls",
       "Change of heart?",
-      "Wouldn't you reconsider?",
-      "Is that your final answer?",
-      "You're breaking my heart ;(",
-      "Is that your final answer?",
-      "You're breaking my heart ;(",
-      "Plsss? :( You're breaking my heart",
+      "ok but like econsider?",
+      "Final answer?",
+      "No pls :(",
+      "Final answer?",
+      "You're breaking my heart :(",
+      "plsplsplsplsplspls",
     ];
 
     return phrases[Math.min(noCount, phrases.length - 1)];
@@ -43,7 +43,14 @@ export default function Page() {
         <>
           <img src="https://media.tenor.com/gUiu1zyxfzYAAAAi/bear-kiss-bear-kisses.gif" />
           <div className="text-4xl md:text-6xl font-bold my-4">
-            Happy Valentine #1 together jaan!
+            Happy Valentine #1 together jaan, you said yes and that made my whole world brighter!
+            
+            I don’t know what I did to deserve someone as sweet, intelligent, beautiful, and amazing as you. I’m so grateful and proud to call you mine. You’re my favorite person and I can't wait for us to spend forever together.
+
+            I love you, Aliah.
+
+            - Omar
+            
           </div>
         </>
       ) : (
