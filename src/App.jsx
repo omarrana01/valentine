@@ -37,20 +37,40 @@ function App() {
 
 const getNoButtonText = () => {
   const phrases = [
-    "No",
-    "Are you sure?",
-    "Really sure?",
-    "Double check pls",
-    "nope",
-    "negative",
-    "lady pls",
-    "stop it",
-    "you dont have a choice",
-    "hey siri play heartless by Kanye",
-    "maam what u doing huh",
-    "aliah no",
-    "sooooo rude :("
-  ];
+const phrases = [
+  "No",
+  "Are you sure?",
+  "Really sure?",
+  "Think again.",
+  "Double check pls.",
+  "Nope.",
+  "Negative.",
+  "Lady pls.",
+  "Stop it.",
+  "You don’t have a choice.",
+  "Hey Siri play Heartless by Kanye.",
+  "Maam what u doing huh.",
+  "Aliah no.",
+  "Sooooo rude :(",
+  "Why you like this?",
+  "That hurt.",
+  "I’m sensitive you know.",
+  "Be nice.",
+  "You’re breaking my heart.",
+  "This is emotional damage.",
+  "Okay but reconsider.",
+  "Last chance.",
+  "Final answer?",
+  "Are you 100% sure?",
+  "Please?",
+  "Plssssss?",
+  "I will cry.",
+  "Don’t do this to me.",
+  "You know you want to say yes.",
+  "I’m waiting…",
+  "Still no?",
+  "Okay I respect it… but reconsider.",
+];
 
   return phrases[Math.min(noCount, phrases.length - 1)];
 };
@@ -67,8 +87,6 @@ const getNoButtonText = () => {
         yesPressed ? "opacity-100 scale-100" : "opacity-0 scale-95 pointer-events-none"
       }`}
     >
-      <div className="relative w-full max-w-lg min-h-[420px]">
-
         <h1 className="text-3xl md:text-4xl font-bold mb-6">
           Happy Valentine Day #1 jaan 💕
         </h1>
