@@ -1,5 +1,6 @@
 import { useState } from "react";
-import bear from "./assets/bear.gif"; // download the gif locally
+import lovesvg from "./assets/All You Need Is Love SVG Cut File.svg";
+import lovesvg2 from "./assets/Love In The Air SVG Cut File.svg";
 
 function App() {
   const [yesPressed, setYesPressed] = useState(false);
