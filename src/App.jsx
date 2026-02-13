@@ -143,4 +143,7 @@ const getNoButtonText = () => {
     </div>
   </div>
 </div>
+  );
+}
+    
 export default App;
