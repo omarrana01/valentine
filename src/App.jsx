@@ -68,7 +68,7 @@ const getNoButtonText = () => {
         yesPressed ? "opacity-100 scale-100" : "opacity-0 scale-95 pointer-events-none"
       }`}
     >
-      <<div className="relative w-full max-w-lg min-h-[500px] flex items-center justify-center">
+      <div className="relative w-full max-w-lg min-h-[500px] flex items-center justify-center">
         <h1 className="text-3xl md:text-4xl font-bold mb-6">
           Happy Valentine Day #1 jaan 💕
         </h1>
