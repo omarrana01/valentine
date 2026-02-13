@@ -46,23 +46,25 @@ export default function Page() {
   <>
     <img src="https://media.tenor.com/gUiulzyxfzYAAAAi/bear-kiss-bear-kisses.gif" />
 
-    <div className="text-4xl md:text-6xl font-bold my-4 text-center">
+ <div className="text-4xl md:text-6xl font-bold text-center mb-6 px-4">
       Happy Valentine #1 together jaan, you said yes and that made my whole world brighter!
     </div>
 
-    <p className="text-lg md:text-xl max-w-2xl text-center mt-4">
-      I don’t know what I did to deserve someone as sweet, intelligent, beautiful,
-      and amazing as you. I’m so grateful and proud to call you mine.
-      You’re my favorite person and I can't wait for us to spend forever together.
-    </p>
+    <div className="max-w-3xl px-6 text-center space-y-6">
+      <p className="text-lg md:text-xl leading-relaxed">
+        I don’t know what I did to deserve someone as sweet, intelligent,
+        beautiful, and amazing as you. I’m so grateful and proud to call you mine.
+        You’re my favorite person and I can't wait for us to spend forever together.
+      </p>
 
-    <p className="text-lg text-center mt-4">
-      I love you, Aliah.
-    </p>
+      <p className="text-lg md:text-xl">
+        I love you, Aliah.
+      </p>
 
-    <p className="text-lg text-center mt-2">
-      — Omar
-    </p>
+      <p className="text-lg opacity-80">
+        — Omar
+      </p>
+    </div>
   </>
       ) : (
         <>
