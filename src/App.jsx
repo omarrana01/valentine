@@ -48,12 +48,12 @@ export default function Page() {
     />
 
     <h1 className="text-3xl md:text-5xl font-bold mb-6 max-w-3xl">
-      Happy Valentine #1 together jaan, you said yes and that made my whole world brighter!
+      Happy Valentine #1 together jaan!
     </h1>
 
     <div className="max-w-2xl space-y-5">
       <p className="text-lg md:text-xl leading-relaxed">
-        I don’t know what I did to deserve someone as sweet, intelligent,
+        You said yes and that made my whole world brighter, I don’t know what I did to deserve someone as sweet, intelligent,
         beautiful, and amazing as you. I’m so grateful and proud to call you mine.
         You’re my favorite person and I can't wait for us to spend forever together.
       </p>
