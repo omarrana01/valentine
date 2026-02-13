@@ -60,8 +60,7 @@ const getNoButtonText = () => {
   className="min-h-[100svh] flex items-center justify-center px-4 py-10 bg-cover bg-center"
   style={{ backgroundImage: `url(${bgImage})` }}
 >
-  <div className="relative w-full max-w-xl">
-
+  <div className="relative w-full max-w-lg min-h-[420px]">
     {/* YES CARD */}
     <div
       className={`absolute inset-0 transition-all duration-500 ease-in-out ${
