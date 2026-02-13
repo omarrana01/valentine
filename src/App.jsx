@@ -35,106 +35,112 @@ function App() {
     setNoCount((prev) => prev + 1);
   };
 
-  const getNoButtonText = () => {
-    const phrases = [
-      "No",
-      "Are you sure?",
-      "Really sure?",
-      "Double check pls",
-      "nope",
-      "negative",
-      "lady pls",
-      "stop it",
-      "you dont have a choice",
-      "hey siri play heartless by Kanye",
-      "maam what u doing huh",
-      "aliah no",
-      "sooooo rude :("
-    ];
+const getNoButtonText = () => {
+  const phrases = [
+    "No",
+    "Are you sure?",
+    "Really sure?",
+    "Double check pls",
+    "nope",
+    "negative",
+    "lady pls",
+    "stop it",
+    "you dont have a choice",
+    "hey siri play heartless by Kanye",
+    "maam what u doing huh",
+    "aliah no",
+    "sooooo rude :("
+  ];
 
-    return phrases[Math.min(noCount, phrases.length - 1)];
-  };
+  return phrases[Math.min(noCount, phrases.length - 1)];
+};
 
   return (
     <div
-        className="min-h-screen flex items-center justify-center px-4 py-10 bg-cover bg-center"
-        style={{ backgroundImage: `url(${bgImage})` }}
+  className="min-h-screen flex items-center justify-center px-4 py-10 bg-cover bg-center"
+  style={{ backgroundImage: `url(${bgImage})` }}
+>
+  <div className="relative w-full max-w-xl">
+
+    {/* YES CARD */}
+    <div
+      className={`absolute inset-0 transition-all duration-500 ease-in-out ${
+        yesPressed ? "opacity-100 scale-100" : "opacity-0 scale-95 pointer-events-none"
+      }`}
     >
-      {yesPressed ? (
-        <div className="bg-white/80 backdrop-blur-lg rounded-2xl shadow-xl p-6 max-w-md w-full text-center border border-white/40">
-          <img
-            src="https://media.tenor.com/gUiulzyxfzYAAAAi/bear-kiss-bear-kisses.gif"
-            alt="cute bears"
-            className="w-40 mx-auto mb-4"
-          />
+      <div className="bg-white/75 backdrop-blur-xl rounded-3xl shadow-2xl px-8 py-10 text-center border border-white/40">
+        <h1 className="text-3xl md:text-4xl font-bold mb-6">
+          Happy Valentine Day #1 jaan 💕
+        </h1>
 
-          <h1 className="text-2xl md:text-3xl font-bold mb-4">
-            Happy Valentine Day #1 jaan 💕
-          </h1>
+        <p className="text-lg leading-relaxed mb-4">
+          You said yes and that made my whole world brighter.
+        </p>
 
-          <p className="text-lg leading-relaxed mb-3">
-            You said yes and that made my whole world brighter.
-          </p>
+        <p className="text-lg leading-relaxed mb-4">
+          I don’t know what I did to deserve someone as sweet,
+          intelligent, beautiful, and amazing as you.
+          I’m so grateful and proud to call you mine.
+        </p>
 
-          <p className="text-lg leading-relaxed mb-3">
-            I don’t know what I did to deserve someone as sweet,
-            intelligent, beautiful, and amazing as you.
-            I’m so grateful and proud to call you mine.
-          </p>
+        <p className="text-lg leading-relaxed mb-6">
+          You’re my favorite person, and I can’t wait
+          for us to spend forever together.
+        </p>
 
-          <p className="text-lg leading-relaxed mb-4">
-            You’re my favorite person, and I can’t wait
-            for us to spend forever together.
-          </p>
+        <p className="text-xl font-semibold">
+          I love you Aliah.
+        </p>
 
-          <p className="text-xl font-semibold">
-            I love you Aliah.
-          </p>
+        <p className="mt-2 opacity-60">
+          - Omar
+        </p>
 
-          <p className="mt-2 opacity-60">
-            — Omar
-          </p>
-
-          <p className="mt-3 text-sm opacity-50">
-            February 14, 2026
-          </p>
-        </div>
-      ) : (
-        <div className="bg-white/85 backdrop-blur-md rounded-2xl shadow-lg p-6 max-w-md w-full text-center relative">
-          <h1 className="text-2xl md:text-3xl font-bold mb-6">
-            Will you be my Valentine? 💖
-          </h1>
-
-          <div className="relative h-40">
-            <button
-              onClick={() => setYesPressed(true)}
-              className="px-6 py-3 bg-rose-500 text-white rounded-lg text-lg font-semibold hover:scale-105 transition transform duration-200"
-            >
-              Yes
-            </button>
-
-            <button
-              onClick={isMobile ? handleNoClick : undefined}
-              onMouseEnter={!isMobile ? moveNoButton : undefined}
-              style={
-                !isMobile
-                  ? {
-                      position: "absolute",
-                      top: noPosition.top,
-                      left: noPosition.left,
-                      transform: "translate(-50%, -50%)",
-                    }
-                  : { marginLeft: "10px" }
-              }
-              className="px-6 py-3 bg-gray-300 rounded-lg text-lg font-semibold transition-all duration-300"
-            >
-              {isMobile ? getNoButtonText() : "No"}
-            </button>
-          </div>
-        </div>
-      )}
+        <p className="mt-3 text-sm opacity-50">
+          February 14, 2026
+        </p>
+      </div>
     </div>
-  );
-}
 
-export default App;
+    {/* QUESTION CARD */}
+    <div
+      className={`transition-all duration-500 ease-in-out ${
+        yesPressed ? "opacity-0 scale-95 pointer-events-none" : "opacity-100 scale-100"
+      }`}
+    >
+      <div className="bg-white/75 backdrop-blur-xl rounded-3xl shadow-2xl px-8 py-10 text-center border border-white/40">
+        <h1 className="text-3xl md:text-4xl font-bold mb-8">
+          Aliah, will you be my Valentine? 💖
+        </h1>
+
+        <div className="flex flex-col items-center gap-4 relative">
+          <button
+            onClick={() => setYesPressed(true)}
+            className="px-8 py-3 bg-rose-500 text-white rounded-xl text-lg font-semibold hover:scale-105 transition duration-200"
+          >
+            Yes
+          </button>
+
+          <button
+            onClick={isMobile ? handleNoClick : undefined}
+            onMouseEnter={!isMobile ? moveNoButton : undefined}
+            style={
+              !isMobile
+                ? {
+                    position: "absolute",
+                    top: noPosition.top,
+                    left: noPosition.left,
+                    transform: "translate(-50%, -50%)",
+                  }
+                : {}
+            }
+            className="px-8 py-3 bg-gray-300 rounded-xl text-lg font-semibold transition duration-300"
+          >
+            {isMobile ? getNoButtonText() : "No"}
+          </button>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
