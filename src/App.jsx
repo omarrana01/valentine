@@ -21,7 +21,7 @@ function App() {
       {yesPressed ? (
         <div className="bg-white/80 backdrop-blur-md rounded-2xl shadow-xl p-8 max-w-lg w-full text-center fade-in">
           <img
-            src={bear}
+            src="https://media.tenor.com/gUiulzyxfzYAAAAi/bear-kiss-bear-kisses.gif"
             alt="cute bears"
             className="w-40 mx-auto mb-6"
           />
